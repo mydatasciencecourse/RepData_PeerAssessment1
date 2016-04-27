@@ -1,25 +1,27 @@
 ---
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
+title: 'Reproducible research: Course Project 1'
+author: "FD"
+date: "27 April 2016"
+output: html_document
 ---
 
+# Introduction
 
-## Loading and preprocessing the data
+# Preparation
 
+## Clone git repository
 
+## Read in the files
 
-## What is mean total number of steps taken per day?
+```{r}
+list.files()
+```
 
+The file we are interested in is: activity.zip.
 
+Lets unzip it:
 
-## What is the average daily activity pattern?
+```{r}
+unzip("activity.zip")
+```
 
-
-
-## Imputing missing values
-
-
-
-## Are there differences in activity patterns between weekdays and weekends?
