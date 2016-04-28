@@ -313,14 +313,9 @@ res</code></pre>
 <div id="create-a-new-factor-variable" class="section level2">
 <h2>1. Create a new factor variable</h2>
 <p>Creating a new factor variable is easy. To be language independent, using the wday-function instead of weekdays().</p>
-<pre class="r"><code>library(lubridate)</code></pre>
-<pre><code>## Warning: package 'lubridate' was built under R version 3.2.5</code></pre>
-<pre><code>## 
-## Attaching package: 'lubridate'</code></pre>
-<pre><code>## The following object is masked from 'package:base':
-## 
-##     date</code></pre>
-<pre class="r"><code>imputedDataWeekday&lt;-imputedData
+<pre class="r"><code>library(lubridate)
+
+imputedDataWeekday&lt;-imputedData
 imputedDataWeekday$weekday=factor(ifelse(wday(ymd(imputedDataWeekday$date)) %in% c(1, 7), &quot;weekend&quot;, &quot;weekday&quot;))</code></pre>
 </div>
 <div id="panel-plot-of-the-5-minute-interval-and-the-average-number-of-steps" class="section level2">
